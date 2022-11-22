@@ -1,0 +1,74 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    height: 100vh;
+    margin: auto;
+  }
+  
+  .draggable-list {
+    border: 1px solid black;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .draggable-list li {
+    background-color: #fff;
+    display: flex;
+    flex: 1;
+  }
+  
+  .draggable-list .number {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    height: 60px;
+    width: 60px;
+    border-bottom: 1px solid black;
+  }
+  
+  .draggable-list li.over .draggable {
+    background-color: #eaeaea;
+  }
+  
+  .draggable-list .country-name {
+    margin: 0 20px 0 0;
+    font-size: 25px;
+  }
+  
+  .draggable-list li.right .country-name {
+    color: #3ae374;
+  }
+  
+  .draggable-list li.wrong .country-name {
+    color: #ff3838;
+  }
+  
+  .draggable {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    flex: 1;
+    border-bottom: 1px solid black;
+  }
+  
+  .check{
+    background-color: grey;
+    border: none;
+    color:black;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .check:active {
+    transform: scale(0.98);
+  }
+  
