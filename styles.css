@@ -5,10 +5,19 @@ body {
     align-items: center;
     justify-content: flex-start;
     background-color: #fff;
-    height: 100vh;
     margin: auto;
+    background-color: #CDFCF6;
   }
   
+  .intro{
+    font-size: 1.5rem;
+  }
+
+  h1{
+    font-family: 'Montserrat',sans-serif;
+    color: #DA0463;
+    font-size: 3.5rem;
+  }
   .draggable-list {
     border: 1px solid black;
     padding: 0;
@@ -59,16 +68,27 @@ body {
     border-bottom: 1px solid black;
   }
   
-  .check{
-    background-color: grey;
-    border: none;
-    color:black;
-    font-size: 16px;
-    padding: 10px 20px;
+  .btn{
+    display: inline-block;
+    margin-bottom:20px;
+    margin-top:20px;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
     cursor: pointer;
   }
   
-  .check:active {
+  .btn:active {
     transform: scale(0.98);
   }
   
